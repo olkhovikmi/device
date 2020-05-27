@@ -1,0 +1,219 @@
+.wrap {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.header-container {
+	position: relative;
+	width: 100%;
+	margin-top: 40px;
+
+	background-color: rgba(240, 197, 46, .5);
+}
+
+.inner {
+	padding: 50px 60px 40px 60px
+}
+
+.header-box {}
+
+.logo-header {
+	position: absolute;
+	top: -23px;
+
+	a {
+		color: #000000;
+		@include Gilroy;
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 48px;
+		text-transform: uppercase;
+		letter-spacing: 0.26px;
+	}
+
+	a:hover {
+		opacity: 0.6;
+	}
+
+	a:active {
+		opacity: 0.3;
+	}
+}
+
+.top-menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	&__search-input {
+		width: 144px/1140px*100%;
+		position: relative;
+		margin-left: 16px;
+		margin-right: 393px;
+		padding-left: 21px;
+
+		input {
+			width: 108px;
+			padding: 0;
+
+			color: #000000;
+			@include OpenS;
+			line-height: 15px;
+			letter-spacing: 0.15px;
+
+			background-color: transparent;
+
+			border: none;
+			outline: none;
+		}
+
+		input::placeholder {
+			color: #000000;
+			@include OpenS;
+			line-height: 15px;
+			letter-spacing: 0.15px;
+
+			opacity: 0.3;
+		}
+
+		@media (max-width: 1120px) {
+			margin-right: 340px;
+		}
+
+		@media (max-width: 830px) {
+			margin-right: 110px;
+		}
+	}
+
+	&__search-input::before {
+		position: absolute;
+		top: 2px;
+		left: -16px;
+		display: block;
+		content: "";
+		width: 16px;
+		height: 16px;
+
+		background-image: url("../img/search.svg");
+	}
+
+	&__open-btn {
+		width: 69px/1140px*100%;
+		margin-left: 13px;
+		padding-left: 14px;
+		position: relative;
+		margin-right: 209px;
+
+		button {
+			@include OpenS;
+			color: #000000;
+			letter-spacing: 0.15px;
+
+			background-color: transparent;
+
+			border: none;
+			outline: none;
+
+			cursor: pointer;
+		}
+
+		@media (max-width: 1120px) {
+			margin-right: 40px;
+		}
+	}
+
+	&__open-btn::before {
+		position: absolute;
+		top: 3px;
+		left: -14px;
+		display: block;
+		content: "";
+		width: 13px;
+		height: 12px;
+
+		background-image: url("../img/user.svg");
+	}
+
+	&__compare {
+		width: 89px/1140px*100%;
+		margin-left: 10px;
+		margin-right: 41px;
+		position: relative;
+		padding-left: 10px;
+
+		button {
+			@include OpenS;
+			color: #000000;
+			letter-spacing: 0.15px;
+
+			background-color: transparent;
+
+			border: none;
+			outline: none;
+
+			cursor: pointer;
+		}
+	}
+
+	&__compare::before {
+		position: absolute;
+		top: 4px;
+		left: -10px;
+		display: block;
+		content: "";
+		width: 10px;
+		height: 10px;
+
+		background-image: url("../img/compare.svg");
+	}
+
+	&__cart {
+		width: 82px/1140px*100%;
+		margin-left: 12px;
+		padding-left: 12px;
+		position: relative;
+
+		button {
+			@include OpenS;
+			color: #000000;
+			letter-spacing: 0.15px;
+
+			background-color: transparent;
+
+			border: none;
+			outline: none;
+
+			cursor: pointer;
+		}
+	}
+
+	&__cart::before {
+		position: absolute;
+		top: 3px;
+		left: -12px;
+		display: block;
+		content: "";
+		width: 12px;
+		height: 12px;
+
+		background-image: url("../img/cart.svg");
+	}
+}
+
+.nav-menu {}
+
+.menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	&__item {}
+}
+
+.dropdown {
+	display: none;
+
+	&__item {}
+}
