@@ -55,7 +55,7 @@ body {
 }
 
 .inner {
-  padding: 50px 60px 40px 60px;
+  padding: 50px 60px 160px 60px;
 }
 
 .logo-header {
@@ -91,6 +91,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 50px;
 }
 
 .top-menu__search-input {
@@ -112,6 +113,15 @@ body {
   background-color: transparent;
   border: none;
   outline: none;
+  opacity: 0.3;
+}
+
+.top-menu__search-input input:hover {
+  opacity: 0.6;
+}
+
+.top-menu__search-input input:focus {
+  opacity: 1;
 }
 
 .top-menu__search-input input::-webkit-input-placeholder {
@@ -120,7 +130,6 @@ body {
   font-weight: 300;
   line-height: 15px;
   letter-spacing: 0.15px;
-  opacity: 0.3;
 }
 
 .top-menu__search-input input::-moz-placeholder {
@@ -129,7 +138,6 @@ body {
   font-weight: 300;
   line-height: 15px;
   letter-spacing: 0.15px;
-  opacity: 0.3;
 }
 
 .top-menu__search-input input:-ms-input-placeholder {
@@ -138,7 +146,6 @@ body {
   font-weight: 300;
   line-height: 15px;
   letter-spacing: 0.15px;
-  opacity: 0.3;
 }
 
 .top-menu__search-input input::-ms-input-placeholder {
@@ -147,7 +154,6 @@ body {
   font-weight: 300;
   line-height: 15px;
   letter-spacing: 0.15px;
-  opacity: 0.3;
 }
 
 .top-menu__search-input input::placeholder {
@@ -156,7 +162,6 @@ body {
   font-weight: 300;
   line-height: 15px;
   letter-spacing: 0.15px;
-  opacity: 0.3;
 }
 
 .top-menu__search-input::before {
@@ -168,6 +173,7 @@ body {
   width: 16px;
   height: 16px;
   background-image: url("../img/search.svg");
+  cursor: pointer;
 }
 
 .top-menu__open-btn {
@@ -185,7 +191,6 @@ body {
   letter-spacing: 0.15px;
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -198,6 +203,19 @@ body {
   width: 13px;
   height: 12px;
   background-image: url("../img/user.svg");
+  cursor: pointer;
+}
+
+.top-menu__open-btn:hover,
+.top-menu__compare:hover,
+.top-menu__cart:hover {
+  opacity: 0.6;
+}
+
+.top-menu__open-btn:active,
+.top-menu__compare:active,
+.top-menu__cart:active {
+  opacity: 0.3;
 }
 
 .top-menu__compare {
@@ -215,7 +233,6 @@ body {
   letter-spacing: 0.15px;
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -228,6 +245,7 @@ body {
   width: 10px;
   height: 10px;
   background-image: url("../img/compare.svg");
+  cursor: pointer;
 }
 
 .top-menu__cart {
@@ -244,7 +262,6 @@ body {
   letter-spacing: 0.15px;
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -257,6 +274,7 @@ body {
   width: 12px;
   height: 12px;
   background-image: url("../img/cart.svg");
+  cursor: pointer;
 }
 
 .menu {
@@ -271,8 +289,88 @@ body {
           align-items: center;
 }
 
+.menu__item a {
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.menu__item:first-child {
+  position: relative;
+  margin-right: 280px;
+}
+
+.menu__item:nth-child(2) {
+  margin-right: 38px;
+}
+
+.menu__item:nth-child(3) {
+  margin-right: 105px;
+}
+
+.menu__item a:hover {
+  opacity: 0.6;
+}
+
+.menu__item a:active {
+  opacity: 0.3;
+}
+
+.plus-btn {
+  display: inline-block;
+  margin-left: 16px;
+  vertical-align: text-bottom;
+  cursor: pointer;
+}
+
 .dropdown {
-  display: none;
+  position: absolute;
+  top: 40px;
+  display: grid;
+  grid-gap: 20px 60px;
+}
+
+.dropdown__item a {
+  display: inline-block;
+  color: #000000;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  text-transform: none;
+}
+
+.dropdown__item:nth-child(1) {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+
+.dropdown__item:nth-child(2) {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+
+.dropdown__item:nth-child(3) {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+}
+
+.dropdown__item:nth-child(4) {
+  grid-column: 5 / 9;
+  grid-row: 1 / 2;
+}
+
+.dropdown__item:nth-child(5) {
+  grid-column: 5 / 9;
+  grid-row: 2 / 3;
+}
+
+.dropdown__item:nth-child(6) {
+  grid-column: 8 / 9;
+  grid-row: 1 / 2;
 }
 
 @media (max-width: 1120px) {
@@ -286,6 +384,12 @@ body {
 }
 
 @media (max-width: 830px) {
+  .top-menu__search-input {
+    margin-right: 210px;
+  }
+}
+
+@media (max-width: 620px) {
   .top-menu__search-input {
     margin-right: 110px;
   }
