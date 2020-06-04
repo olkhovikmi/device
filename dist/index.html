@@ -14,7 +14,7 @@
 		<div class="wrap">
 			<div class="header-container">
 				<div class="inner">
-					<div class="header-box">						
+					<div class="header-box">
 						<div class="logo-header"><a href="#">Device</a></div>
 						<div class="top-menu">
 							<div class="top-menu__search-input">
@@ -31,24 +31,27 @@
 							</div>
 						</div>
 						<nav class="nav-menu">
-							<ul class="menu">
-								<li class="menu__item"><a href="#">Каталог товаров</a>
-									<span class="plus-btn">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><g><g opacity=".3"><image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATUlEQVQ4T2NkwAPUVVX/g6QZ//93vHHnzgFsShlHDWCgPAw0VFQccAXkf0bG/WC5//8LGRkYLmCNBVhU4YsNfHKMFBswmg6okA4GPBAB9fljoYz7GcoAAAAASUVORK5CYII="/></g></g></svg>
-									</span>
-									<ul class="dropdown">
-										<li class="dropdown__item"><a href="#">Виртуальная реальность</a></li>
-										<li class="dropdown__item"><a href="#">Моноподы для селфи</a></li>
-										<li class="dropdown__item"><a href="#">Экшн-камеры</a></li>
-										<li class="dropdown__item"><a href="#">Фитнес-браслеты</a></li>
-										<li class="dropdown__item"><a href="#">Умные часы</a></li>
-										<li class="dropdown__item"><a href="#">Квадрокоптеры</a></li>
-									</ul>
-								</li>
-								<li class="menu__item"><a href="#">Доставка</a></li>
-								<li class="menu__item"><a href="#">Гарантия</a></li>
-								<li class="menu__item"><a href="#">Контакты</a></li>
-							</ul>
+							<input class="visibility-hidden" type="checkbox" id="plus-checkbox" checked>
+							<div class="menu-box">								
+								<ul class="menu">
+									<li class="menu__item menu-plus"><a href="#">Каталог товаров</a>
+									<label for="plus-checkbox" class="plus"></label>
+									</li>
+									<li class="menu__item"><a href="#">Доставка</a></li>
+									<li class="menu__item"><a href="#">Гарантия</a></li>
+									<li class="menu__item"><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="dropdown-menu">
+								<ul class="dropdown">
+									<li class="dropdown__item"><a href="#">Виртуальная реальность</a></li>
+									<li class="dropdown__item"><a href="#">Моноподы для селфи</a></li>
+									<li class="dropdown__item"><a href="#">Экшн-камеры</a></li>
+									<li class="dropdown__item"><a href="#">Фитнес-браслеты</a></li>
+									<li class="dropdown__item"><a href="#">Умные часы</a></li>
+									<li class="dropdown__item"><a href="#">Квадрокоптеры</a></li>
+								</ul>
+							</div>
 						</nav>
 					</div>
 				</div>

@@ -15,18 +15,33 @@ $bgc:rgba(240, 197, 46, .5);
 	font-weight: 300;
 }
 
+
 * {
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 	text-decoration: none;
+}
+
+
+
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 }
 
 body {
 	color: #000;
 	font-size: 15px;
+}
+
+.visibility-hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	appearance: none;
 }
 
 @import 'header';
