@@ -1,7 +1,7 @@
-let project_folder = 'dist'; // эту папку надо выгружать на сервер и передавать заказчику
-let source_folder = '#src'; // папка с исходниками
+const project_folder = 'dist'; // эту папку надо выгружать на сервер и передавать заказчику
+const source_folder = '#src'; // папка с исходниками
 
-let path = {
+const path = {
 	build: {
 		html: project_folder + '/',
 		css: project_folder + '/css/',
@@ -25,7 +25,7 @@ let path = {
 	clean: './' + project_folder + '/'
 };
 //ПЕРЕМЕННЫЕ
-let { src, dest } = require('gulp'),
+const { src, dest } = require('gulp'),
 	gulp = require('gulp'),
 	browsersync = require('browser-sync').create(),
 	fileinclude = require('gulp-file-include'),
@@ -137,8 +137,8 @@ function clear() {
 	return del(path.clean);
 } //удаляет папку dist
 
-let build = gulp.series(clear, gulp.parallel(js, css, html, images, fonts));
-let watch = gulp.parallel(build, watchFiles, browserSync); //вызывает функции
+const build = gulp.series(clear, gulp.parallel(js, css, html, images, fonts));
+const watch = gulp.parallel(build, watchFiles, browserSync); //вызывает функции
 
 exports.fonts = fonts;
 exports.images = images;

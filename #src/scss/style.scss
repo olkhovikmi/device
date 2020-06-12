@@ -37,7 +37,7 @@ body {
 	font-size: 15px;
 }
 
-.visibility-hidden {
+.visually-hidden {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -45,3 +45,5 @@ body {
 }
 
 @import 'header';
+
+@import 'slider';
