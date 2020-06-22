@@ -1,0 +1,165 @@
+.box-services {
+	margin-bottom: 94px;
+}
+
+.box-services_grey {
+	min-height: 290px;
+
+	background-color: #e5e5e5;
+}
+
+.services {
+	position: relative;
+
+	z-index: 300;
+
+	&__item {
+		max-width: 280px;
+		margin-bottom: 50px;
+		position: relative;
+		top: -12px;
+
+		@include Gilroy;
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 2.15px;
+
+		cursor: pointer;
+
+		.services__link {
+			position: relative;
+			left: 20px;
+
+			color: #000;
+
+			z-index: 300;
+		}
+	}
+
+	&__item:active .services__link {
+		color: #f7e184;
+
+		transition: all .3s linear;
+	}
+
+	&__item::before {
+		display: block;
+		width: 160px;
+		height: 8px;
+		position: absolute;
+		top: 6px;
+		left: 0px;
+		content: '';
+
+		background-color: #f0c52e;
+	}
+
+	&__item:hover::before {
+		width: 280px;
+		height: 40px;
+		position: absolute;
+		top: -10px;
+		left: 0px;
+
+		background-color: #f0c52e;
+
+		transition: all .3s ease-in-out;
+	}
+
+	&__item:active::before {
+		width: 280px;
+		height: 40px;
+		position: absolute;
+		top: -10px;
+		left: 0px;
+
+		background-color: #000000;
+
+		transition: all .3s ease-in-out;
+	}
+
+	&__item::after {
+		display: block;
+		width: 7px;
+		height: 220px;
+		position: absolute;
+		top: -121px;
+		right: 0;
+		content: '';
+
+		background-color: #000;
+	}
+
+	&__item:last-child {
+		margin-bottom: 0;
+
+		.services__link {
+			position: relative;
+			left: 30px;
+		}
+	}
+
+	&__content {
+		display: none;
+		min-width: 815px;
+
+		position: absolute;
+		top: -20px;
+		left: 400px;
+	}
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 40px;
+
+		@include Gilroy;
+		font-size: 47px;
+		font-weight: 400;
+		letter-spacing: 0.21px;
+		text-transform: none;
+	}
+
+	&__text {
+		width: 520px;
+		margin-bottom: 15px;
+
+		color: #464646;
+		@include OpenS;
+		line-height: 30px;
+		letter-spacing: 0.15px;
+		text-transform: none;
+	}
+}
+
+.delivery {
+	background-image: url('../img/delivery.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+.warranty {
+	background-image: url('../img/warranty.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+.credit {
+	background-image: url('../img/credit.png');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+.services__item:nth-child(2):hover .services__content {
+	top: -88px;
+}
+
+.services__item:nth-child(3):hover .services__content {
+	top: -160px;
+}
+
+.services__item:nth-child(1):hover .services__content,
+.services__item:nth-child(2):hover .services__content,
+.services__item:nth-child(3):hover .services__content {
+	display: block;
+}
