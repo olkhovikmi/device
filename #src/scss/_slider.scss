@@ -56,17 +56,9 @@
 }
 
 .slider-checkbox {
-	
 
-	&__item:nth-child(1) {
-		display: none;
-	}
 
-	&__item:nth-child(2) {
-		display: none;
-	}
-
-	&__item:nth-child(3) {
+	&__item {
 		display: none;
 	}
 
@@ -78,7 +70,7 @@
 
 	img {
 		position: absolute;
-		top: -65px;
+		top: -55px;
 		left: 0;
 		max-width: 100%;
 	}
@@ -139,20 +131,13 @@
 
 	.box-more {
 		position: relative;
-		width: 220px;
-		height: 8px;
-
-
-		background-color: #f0c52e;
 
 		cursor: pointer;
 
-
-		a {
-			position: absolute;
+		&__link {
+			position: relative;
 			top: -7px;
-			left: 50%;
-			margin-left: -65px;
+			left: 35%;			
 
 			color: #000000;
 			@include Gilroy;
@@ -162,18 +147,34 @@
 			text-transform: uppercase;
 			text-align: center;
 			letter-spacing: 2.15px;
+
+			z-index: 300;
 		}
 	}
 
-	.box-more:hover {
+	.box-more::before {
+		display: block;
+		width: 220px;
+		height: 8px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+
+		background-color: #f0c52e;		
+	}
+
+	.box-more:hover::before {		
 		height: 40px;
 
 		background-color: #f0c52e;
-		transition: all 0.3s ease;
+		transition: all 0.3s linear;
+	}
 
-		a {
-			top: 7px;
-		}
+	.box-more:hover a{
+		top: 7px;
+
+		transition: top 0.3s ease-in-out;
 	}
 
 	.box-more:active {

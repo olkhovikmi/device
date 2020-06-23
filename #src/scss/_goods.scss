@@ -8,9 +8,21 @@
 	align-items: center;
 	flex-wrap: wrap;
 
+	&__link {
+		display: block;
+	}
+
+	&__link:hover &__square {
+		background-color: #f0c52e;
+	}
+
+	&__link:active {
+		opacity: 0.3;
+	}
+
 	&__item {
 		flex-basis: 13%;
-		margin-right: 10px;	
+		margin-right: 10px;
 	}
 
 	&__item:last-child {
@@ -43,42 +55,42 @@
 }
 
 .product-1 {
-	background-image: url('../img/popular-1.svg');
+	background-image: url('../img/popular-1.png');
 	background-repeat: no-repeat;
 
 	background-position: 50% 50%;
 }
 
 .product-2 {
-	background-image: url('../img/popular-2.svg');
+	background-image: url('../img/popular-2.png');
 	background-repeat: no-repeat;
 
 	background-position: 50% 110%;
 }
 
 .product-3 {
-	background-image: url('../img/popular-3.svg');
+	background-image: url('../img/popular-3.png');
 	background-repeat: no-repeat;
 
 	background-position: 50% 50%;
 }
 
 .product-4 {
-	background-image: url('../img/popular-4.svg');
+	background-image: url('../img/popular-4.png');
 	background-repeat: no-repeat;
 
 	background-position: 50% 50%;
 }
 
 .product-5 {
-	background-image: url('../img/popular-5.svg');
+	background-image: url('../img/popular-5.png');
 	background-repeat: no-repeat;
 
 	background-position: 50% 50%;
 }
 
 .product-6 {
-	background-image: url('../img/popular-6.svg');
+	background-image: url('../img/popular-6.png');
 	background-repeat: no-repeat;
 
 	background-position: 50% 50%;
