@@ -1,0 +1,29 @@
+.box-barands {
+	margin-bottom: 150px;
+}
+
+.brands {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__item {
+		flex-basis: 20%;
+		margin-right: 40px;
+
+		opacity: .2;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__item:hover {
+		opacity: 1;
+	}
+
+	&__link {
+	}
+}

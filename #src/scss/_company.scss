@@ -1,0 +1,121 @@
+.box-company {
+	margin-bottom: 90px;
+}
+
+.company-content {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.about {
+	width: 475px / 1160px * 100%;
+	margin-right: 120px;
+
+	&__body {}
+
+	&__title {
+		position: relative;
+		margin-bottom: 60px;
+
+		@include Gilroy;
+		font-size: 47px;
+		font-weight: 400;
+		letter-spacing: 0.21px;
+	}
+
+	&__title::before {
+		display: block;
+		position: absolute;
+		top: -50px;
+		left: 0;
+		width: 80px;
+		height: 7px;
+		content: '';
+
+		background-color: #000000;
+	}
+
+	&__text {
+		margin-bottom: 45px;
+
+		color: #464646;
+		@include OpenS;
+		line-height: 30px;
+	}
+}
+
+.tranpsort-company {
+	margin-bottom: 70px;
+
+	&__item {
+		position: relative;
+		margin-left: 8px;
+		padding-left: 25px;
+
+		@include Gilroy;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 40px;
+	}
+
+	&__item::before {
+		position: absolute;
+		top: 15px;
+		left: 0;
+		display: block;
+		width: 8px;
+		height: 8px;
+		content: '';
+
+		background-image: url(../img/circle-icon.svg);
+		background-repeat: no-repeat;
+
+		opacity: .3;
+	}
+}
+
+.about-link {
+	left: 3%;
+}
+
+.contact {
+	width: 565px / 1160px * 100%;
+
+	&__title {
+		position: relative;
+		margin-bottom: 60px;
+
+		@include Gilroy;
+		font-size: 47px;
+		font-weight: 400;
+		letter-spacing: 0.21px;
+	}
+
+	&__title::before {
+		display: block;
+		position: absolute;
+		top: -50px;
+		left: 0;
+		width: 80px;
+		height: 7px;
+		content: '';
+
+		background-color: #000000;
+	}
+
+	&__text {
+		margin-bottom: 45px;
+
+		color: #464646;
+		@include OpenS;
+		line-height: 30px;
+	}
+
+	&__map {
+		margin-bottom: 70px;
+	}
+}
+
+.contact-link {
+	left: 5%;
+}
