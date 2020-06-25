@@ -1,0 +1,233 @@
+.footer {}
+
+.box-footer {
+	background-color: #464646;
+}
+
+.footer-body {
+	padding: 65px 0;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+
+	&__logo {
+		a {
+			color: #ffc600;
+			@include Gilroy;
+			font-size: 48px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 0.48px;
+		}
+
+		a:hover {
+			opacity: 0.6;
+		}
+
+		a:active {
+			opacity: 0.3;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__button {
+		margin-right: 40px;
+
+		button {
+			position: relative;
+			margin-left: 14px;
+			padding-left: 12px;
+
+			color: #ffffff;
+			@include OpenS;
+			letter-spacing: 0.15px;
+
+			background-color: transparent;
+			border: none;
+			outline: none;
+
+			cursor: pointer;
+			opacity: 0.7;
+		}
+
+		button:hover {
+			opacity: 1;
+		}
+
+		button:active {
+			opacity: .3;
+		}
+	}
+
+	&__button:focus-within {
+		outline: 1px solid blue;
+	}
+
+	&__button:active {
+		outline: none;
+	}
+
+	&__button:last-child {
+		margin-right: 0;
+	}
+}
+
+.open::before {
+	position: absolute;
+	top: 3px;
+	left: -14px;
+	display: block;
+	width: 13px;
+	height: 12px;
+	content: "";
+
+	background-image: url('../img/user-yellow.png');
+}
+
+.compare::before {
+	position: absolute;
+	top: 4px;
+	left: -14px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	content: "";
+
+	background-image: url('../img/compare-yellow.png');
+}
+
+.cart::before {
+	position: absolute;
+	top: 3px;
+	left: -14px;
+	display: block;
+	width: 12px;
+	height: 12px;
+	content: "";
+
+	background-image: url('../img/cart-yellow.png');
+}
+
+.footer-middle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 70px;
+
+	&__addres {
+		color: #ffffff;
+		@include OpenS;
+	}
+
+	&__item {
+		margin-right: 38px;
+
+		a {
+			color: #ffffff;
+			@include Gilroy;
+			font-size: 18px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 3.6px;
+		}
+
+		a:hover {
+			opacity: 0.6;
+		}
+
+		a:active {
+			opacity: 0.3;
+		}
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__contact {
+		color: #ffffff;
+		@include OpenS;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__line {
+		width: 80px;
+		height: 7px;
+
+		background-color: #ffc600;
+	}
+
+	&__logo {}
+
+	&__link {}
+
+	&__link:hover {
+		opacity: 0.6;
+	}
+
+	&__link:active {
+		opacity: 0.3;
+	}
+}
+
+.social {
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__item {
+		width: 32px;
+		height: 32px;
+		margin-right: 23px;
+
+		background-color: #b5b5b5;
+		border-radius: 50%;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__link {
+		display: block;
+		width: 32px;
+		height: 32px;
+
+		background-image: url('../img/fb.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+
+		opacity: 0.3;
+	}
+
+	&__link:hover {
+		opacity: 1;
+	}
+	&__link:active {
+		opacity: 0.1 ;
+	}
+}
+
