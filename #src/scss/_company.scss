@@ -117,5 +117,18 @@
 }
 
 .contact-link {
-	left: 5%;
+	width: 220px;
+	left: 0;
+
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.box-more:hover .contact-link {
+	top: 7px;
+	-webkit-transition: top .3s ease-in-out;
+	-o-transition: top .3s ease-in-out;
+	transition: top .3s ease-in-out;
 }

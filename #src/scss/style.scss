@@ -37,10 +37,11 @@ body {
 	font-size: 15px;
 }
 
+
 .visually-hidden {
 	position: absolute;
 	top: 250px;
-	right:150px;
+	right: 150px;
 	appearance: none;
 }
 
@@ -52,3 +53,4 @@ body {
 @import 'brands';
 @import 'company';
 @import 'footer';
+@import 'popup';

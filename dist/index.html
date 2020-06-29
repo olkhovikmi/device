@@ -9,7 +9,7 @@
 	<title>Device</title>
 </head>
 
-<body>
+<body class="body">
 	<header class="header">
 		<div class="wrap">
 			<div class="header-container">
@@ -287,8 +287,39 @@
 								tabindex="0"></iframe>
 						</div>
 						<div class="box-more">
-							<a href="#" class="box-more__link contact-link">Напишите нам</a>
+							<button type="button" class="box-more__link contact-link">Напишите нам</button>
 						</div>
+
+						<div class="popup">
+							<div class="popup__inner">
+								<div class="popup__close-box">
+									<div class="popup__close"></div>
+								</div>
+								<form class="popup__body">
+									<div class="popup__top">
+										<div class="popup__name">
+											<label for="name">Ваше имя:</label>
+											<input type="text" id="name" placeholder="Имя Фамилия">
+										</div>
+										<div class="popup__email">
+											<label for="email">Ваш e-mail:</label>
+											<input type="email" name="email" id="email" placeholder="email@example.com">
+										</div>
+									</div>
+									<div class="popup__bottom">
+										<p class="popup__text">
+											<b>Текст письма:</b>
+										</p>
+										<textarea name="text" cols="105" rows="10" placeholder="В свободной форме"></textarea>
+									</div>
+									<div class="box-more">
+										<button type="submit" class="box-more__link popup__btn">Отправить</button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
 					</section>
 				</div>
 

@@ -1,0 +1,197 @@
+.popup {
+	display: none;
+	width: 960px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-top: 550px;
+	margin-left: -480px;
+
+	background-color: #fff;
+	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+	z-index: 500;
+
+	&__inner {
+		position: relative;
+		padding: 85px 100px;
+	}
+
+	&__close-box {
+		position: absolute;
+		top: 27px;
+		right: 37px;
+
+	}
+
+	&__close {
+		position: relative;
+		width: 55px;
+		height: 55px;
+
+		border-radius: 50%;
+
+		background-color: #f7e296;
+		cursor: pointer;
+	}
+
+	&__close::before {
+		display: block;
+		width: 2px;
+		height: 30px;
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		content: '';
+
+		background-color: #fff;
+
+		transform: rotate(45deg);
+	}
+
+	&__close::after {
+		display: block;
+		width: 2px;
+		height: 30px;
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		content: '';
+
+		background-color: #fff;
+
+		transform: rotate(-45deg);
+		
+	}
+
+	&__body {
+		width: 100%;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 40px;
+	}
+
+	&__name {
+		display: flex;
+		flex-direction: column;
+		margin-right: 40px;
+
+		label {
+			margin-bottom: 12px;
+
+			@include Gilroy;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+
+		input {
+			width: 360px;
+			padding: 20px;
+
+			color: #c2c2c2;
+			@include OpenS;
+			font-size: 14px;
+			font-weight: 400;
+
+			border: none;
+
+			background-color: #f2f2f2;
+		}
+
+		input::placeholder {
+			color: #c2c2c2;
+			@include OpenS;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	&__email {
+		display: flex;
+		flex-direction: column;
+
+		label {
+			margin-bottom: 12px;
+
+			@include Gilroy;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+
+		input {
+			width: 360px;
+			padding: 20px;
+
+			color: #c2c2c2;
+			@include OpenS;
+			font-size: 14px;
+			font-weight: 400;
+
+			border: none;
+
+			background-color: #f2f2f2;
+		}
+
+		input::placeholder {
+			color: #c2c2c2;
+			@include OpenS;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	&__bottom {
+		margin-bottom: 45px;
+
+		textarea {
+			padding: 20px;
+
+			color: #c2c2c2;
+			@include OpenS;
+			font-size: 14px;
+			font-weight: 400;
+
+			border: none;
+
+			background-color: #f2f2f2;
+		}
+
+		textarea::placeholder {
+			color: #c2c2c2;
+			@include OpenS;
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	&__text {
+		margin-bottom: 12px;
+
+		b {
+			@include Gilroy;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+}
+
+.popup__btn {
+	width: 220px;
+	left: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.box-more:hover .popup__btn {
+	top: 7px;
+	-webkit-transition: top .3s ease-in-out;
+	-o-transition: top .3s ease-in-out;
+	transition: top .3s ease-in-out;
+}
