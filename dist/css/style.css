@@ -71,6 +71,10 @@ body {
   padding: 50px 60px 160px 60px;
 }
 
+.inner-catalog {
+  padding: 50px 60px;
+}
+
 .logo-header {
   position: absolute;
   top: -23px;
@@ -204,6 +208,20 @@ body {
   letter-spacing: 0.15px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.top-menu .top-menu__login {
+  width: 25%;
+  margin-right: 0;
+}
+
+.top-menu .login-name {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
   cursor: pointer;
 }
 

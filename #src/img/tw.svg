@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><g><g opacity="1"><image width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1klEQVRYR8WXS4hOYRjHfw+5lHsWGrGgyZBcmpVLFhMlK8qGLE2YIgul2IkarITcsiTTREk2smAlC8nMuNSkUCTKArMg8ej/zXum85353nPO943xvdvzPO/zO8/9NUoed58LbAM6gJXAImB6UB8C3gD9wAPgtpl9KXO1FQm5u4wdAbYDk4rkw/dfwC2g28wEFT1RAHefAZwC9gGFoBELDlwGDpvZ91oyNS929+VyI9Ba8o+LxF4rfGb2Iis4CsDd1wD3gJlFt9b5/Ruw2cwep/WqAMKfPxoH44lNQaxLe2IEIMT86T90e8xBCkd7khNpgAtAV51ubVT8kplVbFUAQqk9G0O21wui6litEk0AbgA7ckqpqAwV2+Oh9n8ozsAJYCnwFpgPTM7c32NmOy10uI+RJjMIHAB6gVkRQHVBJdZA+ru7zwEWAj+Bl8CEjL6aVYsAdgNXI5ffMbOt7r4EkJfaa8gdNbPuWAzcfQNwMnglK9YpgGvArsgFg2bWFvJkItAJHASWpeTbzEyeGnXcfQpwFtgTuf+6ANSrV+Rk0dps83B3xVYNq0V/Z2ZKqloAApX7Y2dAAOrRyVTLCj4B5KHzZva77lR33wTcz9EbEkBN+qCkEdtqZn/qNR7Cth84l6dbBCDdM8ChRiDc/WYY41GGohAkilfCSP1a1hPuPhVQec8uCkFREkq/w8weljUe3K894mKBTiUJ88ow0X8ObDGz92UgQnPT7J9XIF8pw7xGlNZX51JH7IptN+HP5fq7wMYSsJVGpGUz1opfAZ+Ad4BKstfMPscudvcFQA+wvoTx4VYcqGPD6ANwLBiOJqC7a3WTJzU3ppUwLpHhYRQAtPnmjWM1IeVBHyAoDRY1L025VcDikkYTsepxHCCUscrc/3GqF5IAoDW8eStZgNA63pyldCQ4zVzLUxDNe5ikIJQTp4G9Y1hWG3uapcugaY/TbC2O1/P8LxH3IcgoLavXAAAAAElFTkSuQmCC"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
+		h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
+	<path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
+		c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
+	<rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+	<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+		 M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
+		h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
+</g>
+</svg>
