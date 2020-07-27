@@ -9,8 +9,10 @@
 	width: 100%;
 	margin-top: 40px;
 
-	background-color: rgba(240, 197, 46, .5);
+	background-color: #f7e296;
+	z-index: 300;
 }
+
 
 .inner {
 	padding: 50px 60px 160px 60px
@@ -342,16 +344,20 @@
 
 #plus-checkbox:checked~.dropdown-menu {
 	display: none;
+	
 }
 
 .dropdown-menu {
 	position: relative;
 	display: block;
 
-
 	width: 100%;
-	background-color: rgba(240, 197, 46, .5);
 
+	z-index: 100;
+}
+
+.dropdown-catalog {
+	height: 110px;
 	z-index: 100;
 }
 

@@ -12,7 +12,7 @@ const path = {
 	src: {
 		html: [source_folder + '/*.html', '!' + source_folder + '/_*.html'],
 		css: [source_folder + '/scss/style.scss', source_folder + '/scss/normalize.scss'],
-		js: source_folder + '/js/script.js',
+		js: [source_folder + '/js/script.js', source_folder + '/js/script2.js'],
 		img: source_folder + '/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}',
 		fonts: source_folder + '/fonts/*.{ttf,woff,woff2}'
 	}, // пути вывода

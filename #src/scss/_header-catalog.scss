@@ -1,0 +1,44 @@
+.main-catalog {
+	
+}
+
+.title-catalog {
+	position: absolute;
+	top: 300px;
+	z-index: 1;
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 30px;
+
+		@include Gilroy;
+		font-size: 47px;		
+		font-weight: 800;
+		letter-spacing: 0.01em;
+	}
+
+	&__link {}
+}
+
+.wrap-catalog {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.hd-link {
+	@include OpenS;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	color: #cacaca;
+}
+
+.hd-link:not(:last-child)::after {
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	content: ">";
+	
+	color: #000000;
+}

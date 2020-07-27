@@ -1,6 +1,5 @@
 .box-slider {
 	min-height: 430px;
-
 	margin-bottom: 90px;
 }
 
@@ -21,7 +20,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	z-index: 100;
+	z-index: 450;
 
 	&__basic {
 		width: 12px;
@@ -67,6 +66,7 @@
 .box-img {
 	position: relative;
 	width: 384px / 1010px * 100%;
+	z-index: 400;
 
 	img {
 		position: absolute;
@@ -83,6 +83,9 @@
 	&__inner {
 		position: absolute;
 		top: -32px;
+
+	
+		z-index: 400;
 	}
 
 	&__number {
