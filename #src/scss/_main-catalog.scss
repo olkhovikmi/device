@@ -1,25 +1,101 @@
-.main-box {	
+//Верхняя планка
+.main-header {
 	display: flex;
 	justify-content: flex-start;
-}
+	align-items: center;
 
-.filter-box {
-	width: 210px;
-	margin: 0 0 0 auto;
-}
+	&__left {
+		flex-basis: 33%;
 
-.filter {
-	flex-basis: 33%;
-
-	background-color: #efefef;
-
-	&__header {
-		background-color: #dbdbdb;
+		background-color: #dcdcdc;
 	}
 
-	&__title {}
+	&__filter {
+		width: 270px;
+		margin: 0 0 0 auto;
+		padding: 30px 0;
+
+		h2 {
+
+			@include Gilroy;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+	}
+
+	&__right {
+		flex-basis: 67%;
+
+		background-color: #ebebeb;
+	}
+
+	&__sort {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 30px 0;
+		padding-left: 70px;
+
+		h2 {
+			margin-right: 50px;
+
+			@include Gilroy;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+	}
 }
 
-.sort {
-	flex-basis: 67%;
+.sort-list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-right: 230px;
+
+	&__item {
+		margin-right: 30px;
+	}
+
+	&__link {
+
+		color: #a4a4a4;
+		@include OpenS;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	&__link_active {
+		color: #000;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+}
+
+.sort-arrow {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	&__up {
+		margin-right: 20px;
+		border-bottom: 14px solid #c3c2c2;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		cursor: pointer;
+	}
+
+	&__down {
+		border-top: 14px solid #000;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		cursor: pointer;
+
+	}
 }
