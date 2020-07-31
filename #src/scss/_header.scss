@@ -151,7 +151,7 @@
 	.login-name {
 		display: inline-block;
 		margin-right: 20px;
-		@include OpenS;		
+		@include OpenS;
 		letter-spacing: 0.01em;
 		cursor: pointer;
 	}
@@ -344,7 +344,7 @@
 
 #plus-checkbox:checked~.dropdown-menu {
 	display: none;
-	
+
 }
 
 .dropdown-menu {
@@ -357,8 +357,11 @@
 }
 
 .dropdown-catalog {
-	height: 110px;
+	position: absolute;
+	left: 0;
+	height: 130px;
 	z-index: 100;
+	background-color: #f7e296;
 }
 
 .dropdown {
@@ -385,19 +388,19 @@
 	&__item:nth-child(1) {
 		grid-column: 1 / span 3;
 		grid-row: 1 / 2;
-
+		
 	}
 
 	&__item:nth-child(2) {
 		grid-column: 1 / span 3;
 		grid-row: 2 / 3;
-
+		
 	}
 
 	&__item:nth-child(3) {
 		grid-column: 1 / span 3;
 		grid-row: 3 / 4;
-
+		
 	}
 
 	&__item:nth-child(4) {
@@ -416,4 +419,8 @@
 		grid-column: 7 / span 2;
 		grid-row: 1 / 2;
 	}
+}
+
+.dd_c {
+	padding-left: 60px;
 }

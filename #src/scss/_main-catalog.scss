@@ -1,0 +1,25 @@
+.main-box {	
+	display: flex;
+	justify-content: flex-start;
+}
+
+.filter-box {
+	width: 210px;
+	margin: 0 0 0 auto;
+}
+
+.filter {
+	flex-basis: 33%;
+
+	background-color: #efefef;
+
+	&__header {
+		background-color: #dbdbdb;
+	}
+
+	&__title {}
+}
+
+.sort {
+	flex-basis: 67%;
+}
