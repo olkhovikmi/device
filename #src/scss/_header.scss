@@ -383,24 +383,31 @@
 			letter-spacing: 0.15px;
 			text-transform: none;
 		}
+
+		a:hover {
+			color: rgba(0, 0, 0, 0.6);
+		}
+a:active {
+			color: rgba(0, 0, 0, 0.3);
+		}
 	}
 
 	&__item:nth-child(1) {
 		grid-column: 1 / span 3;
 		grid-row: 1 / 2;
-		
+
 	}
 
 	&__item:nth-child(2) {
 		grid-column: 1 / span 3;
 		grid-row: 2 / 3;
-		
+
 	}
 
 	&__item:nth-child(3) {
 		grid-column: 1 / span 3;
 		grid-row: 3 / 4;
-		
+
 	}
 
 	&__item:nth-child(4) {

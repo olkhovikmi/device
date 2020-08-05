@@ -1,0 +1,142 @@
+.main-body {
+	display: flex;
+	justify-content: flex-start;
+
+
+	&__right {
+		flex-basis: 33%;
+		padding-top: 85px;
+
+		background-color: #eeeeee;
+	}
+
+	&__form {
+		width: 210px;
+		margin: 0 60px 0 auto;
+
+	}
+}
+
+.form-price {
+
+	&__title {
+		position: relative;
+		margin-bottom: 40px;
+
+		@include Gilroy;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.18px;
+	}
+
+	&__title:before {
+		position: absolute;
+		top: -16px;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 2px;
+		content: "";
+
+		background-color: #000;
+	}
+
+}
+
+.scale {
+	position: relative;
+
+
+	&_gray {
+		width: 100%;
+		height: 2px;
+		margin-bottom: 16px;
+
+		background-color: #dbdbdb;
+	}
+
+	&_green {
+		width: 110px;
+		height: 2px;
+
+		background-color: #91c92f;
+	}
+
+	&__min {
+		position: absolute;
+		top: -10px;
+		left: 0;
+		width: 20px;
+		height: 20px;
+
+		background-color: #fff;
+		border-radius: 50%;
+
+		cursor: pointer;
+	}
+
+	&__max {
+		top: -10px;
+		right: 100px;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+
+		background-color: #fff;
+		border-radius: 50%;
+
+		cursor: pointer;
+	}
+}
+
+.price-min {
+	margin-right: 20px;
+
+	color: rgba(0, 0, 0, .2);
+	@include Gilroy;
+	font-size: 14px;
+	font-weight: 300;
+
+	input {
+		width: 40px;
+		@include Gilroy;
+		font-size: 14px;
+		font-weight: 300;
+		color: rgba(0, 0, 0, .2);
+		background-color: transparent;
+		border: none;
+		outline: none;
+	}
+
+	input::placeholder {
+		@include Gilroy;
+		font-size: 14px;
+		font-weight: 300;
+		color: rgba(0, 0, 0, .2);
+	}
+}
+
+.price-max {	
+	color: rgba(0, 0, 0, .2);
+	@include Gilroy;
+	font-size: 14px;
+	font-weight: 300;
+
+	input {
+		width: 40px;
+		@include Gilroy;
+		font-size: 14px;
+		font-weight: 300;
+		color: rgba(0, 0, 0, .2);
+		background-color: transparent;
+		border: none;
+		outline: none;
+	}
+
+	input::placeholder {
+		@include Gilroy;
+		font-size: 14px;
+		font-weight: 300;
+		color: rgba(0, 0, 0, .2);
+	}
+}

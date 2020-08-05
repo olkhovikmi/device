@@ -1,4 +1,3 @@
-
 .title-catalog {
 	margin-top: 25px;
 	margin-bottom: 50px;
@@ -9,7 +8,7 @@
 		margin-bottom: 25px;
 
 		@include Gilroy;
-		font-size: 47px;		
+		font-size: 47px;
 		font-weight: 800;
 		letter-spacing: 0.01em;
 	}
@@ -31,11 +30,19 @@
 	color: #cacaca;
 }
 
+.hd-link:hover {
+	color: #8e8e8e;
+}
+
+.hd-link:active {
+	color: #eeeeee;
+}
+
 .hd-link:not(:last-child)::after {
 	display: inline-block;
 	margin-left: 15px;
 	margin-right: 15px;
 	content: ">";
-	
+
 	color: #000000;
 }

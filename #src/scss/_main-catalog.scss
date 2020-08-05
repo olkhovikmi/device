@@ -73,6 +73,14 @@
 		color: #000;
 	}
 
+	&__link:hover {
+		color: #666666;
+	}
+
+	&__link:active {
+		color: #000;
+	}
+
 	&__item:last-child {
 		margin-right: 0;
 	}
@@ -85,14 +93,23 @@
 
 	&__up {
 		margin-right: 20px;
-		border-bottom: 14px solid #c3c2c2;
+		border-bottom: 14px solid #d3d2d2;
 		border-left: 7px solid transparent;
 		border-right: 7px solid transparent;
 		cursor: pointer;
 	}
 
+	&__up:hover	 {
+		border-bottom: 14px solid #a7a5a6;
+	}
+
+	&__up:active	 {
+		border-bottom: 14px solid #231f20;
+	}
+
+
 	&__down {
-		border-top: 14px solid #000;
+		border-top: 14px solid #231f20;
 		border-left: 7px solid transparent;
 		border-right: 7px solid transparent;
 		cursor: pointer;

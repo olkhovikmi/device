@@ -437,6 +437,14 @@ body {
   text-transform: none;
 }
 
+.dropdown__item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.dropdown__item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .dropdown__item:nth-child(1) {
   grid-column: 1 / span 3;
   grid-row: 1 / 2;
@@ -1774,6 +1782,14 @@ body {
   color: #cacaca;
 }
 
+.hd-link:hover {
+  color: #8e8e8e;
+}
+
+.hd-link:active {
+  color: #eeeeee;
+}
+
 .hd-link:not(:last-child)::after {
   display: inline-block;
   margin-left: 15px;
@@ -1873,6 +1889,14 @@ body {
   color: #000;
 }
 
+.sort-list__link:hover {
+  color: #666666;
+}
+
+.sort-list__link:active {
+  color: #000;
+}
+
 .sort-list__item:last-child {
   margin-right: 0;
 }
@@ -1891,17 +1915,212 @@ body {
 
 .sort-arrow__up {
   margin-right: 20px;
-  border-bottom: 14px solid #c3c2c2;
+  border-bottom: 14px solid #d3d2d2;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   cursor: pointer;
 }
 
+.sort-arrow__up:hover {
+  border-bottom: 14px solid #a7a5a6;
+}
+
+.sort-arrow__up:active {
+  border-bottom: 14px solid #231f20;
+}
+
 .sort-arrow__down {
-  border-top: 14px solid #000;
+  border-top: 14px solid #231f20;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   cursor: pointer;
+}
+
+.main-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main-body__right {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding-top: 85px;
+  background-color: #eeeeee;
+}
+
+.main-body__form {
+  width: 210px;
+  margin: 0 60px 0 auto;
+}
+
+.form-price__title {
+  position: relative;
+  margin-bottom: 40px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.form-price__title:before {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #000;
+}
+
+.scale {
+  position: relative;
+}
+
+.scale_gray {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 16px;
+  background-color: #dbdbdb;
+}
+
+.scale_green {
+  width: 110px;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.scale__min {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scale__max {
+  top: -10px;
+  right: 100px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price-min {
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.price-min input {
+  width: 40px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.price-min input::-webkit-input-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-min input::-moz-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-min input:-ms-input-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-min input::-ms-input-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-min input::placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-max {
+  color: rgba(0, 0, 0, 0.2);
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.price-max input {
+  width: 40px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.price-max input::-webkit-input-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-max input::-moz-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-max input:-ms-input-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-max input::-ms-input-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-max input::placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1120px) {
