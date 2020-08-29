@@ -94,10 +94,10 @@
 			</div>
 		</div>
 		<div class="main-body">
-			<div class="main-body__right">
+			<div class="main-body__left">
 				<form action="#" class="main-body__form">
 					<div class="form-price">
-						<h3 class="form-price__title">Стоимость</h3>
+						<h3 class="form-price__title line">Стоимость</h3>
 						<div class="scale">
 							<div class="scale_gray">
 								<div class="scale_green"></div>
@@ -111,6 +111,33 @@
 								<input type="text" placeholder=" 5000">
 							</label>
 						</div>
+					</div>
+					<fieldset class="form-color">
+						<legend class="form-color__title line">Цвет</legend>
+						<input type="checkbox" class="hidden" name="black" id="checkbox1" checked>
+						<input type="checkbox" class="hidden" name="white" id="checkbox2">
+						<input type="checkbox" class="hidden" name="blue" id="checkbox3" checked>
+						<input type="checkbox" class="hidden" name="red" id="checkbox4" checked>
+						<input type="checkbox" class="hidden" name="pink" id="checkbox5">
+						<div class="form-color__label">
+							<label for="checkbox1" class="checkbox1">Черный</label>
+							<label for="checkbox2" class="checkbox2">Белый</label>
+							<label for="checkbox3" class="checkbox3">Синий</label>
+							<label for="checkbox4" class="checkbox4">Красный</label>
+							<label for="checkbox5" class="checkbox5">Розовый</label>
+						</div>
+					</fieldset>
+					<fieldset class="form-radio">
+						<legend class="form-radio__title line">Bluetooth</legend>
+						<input type="radio" class="hidden" name="bluetooth" id="radio1" checked>
+						<input type="radio" class="hidden" name="bluetooth" id="radio2">
+						<div class="form-radio__label">
+							<label for="radio1" class="radio1">Есть</label>
+							<label for="radio2" class="radio2">Нет</label>
+						</div>
+					</fieldset>
+					<div class="box-more">
+						<button type="submit" class="box-more__link form-btn">Показать</button>
 					</div>
 				</form>
 			</div>

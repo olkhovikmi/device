@@ -1,13 +1,25 @@
+.hidden {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
 .main-body {
 	display: flex;
 	justify-content: flex-start;
 
 
-	&__right {
+	&__left {
 		flex-basis: 33%;
 		padding-top: 85px;
 
 		background-color: #eeeeee;
+
+		z-index: 1;
 	}
 
 	&__form {
@@ -18,6 +30,7 @@
 }
 
 .form-price {
+	margin-bottom: 57px;
 
 	&__title {
 		position: relative;
@@ -28,20 +41,8 @@
 		font-weight: 400;
 		letter-spacing: 0.18px;
 	}
-
-	&__title:before {
-		position: absolute;
-		top: -16px;
-		left: 0;
-		display: block;
-		width: 100%;
-		height: 2px;
-		content: "";
-
-		background-color: #000;
-	}
-
 }
+
 
 .scale {
 	position: relative;
@@ -116,7 +117,7 @@
 	}
 }
 
-.price-max {	
+.price-max {
 	color: rgba(0, 0, 0, .2);
 	@include Gilroy;
 	font-size: 14px;
@@ -139,4 +140,133 @@
 		font-weight: 300;
 		color: rgba(0, 0, 0, .2);
 	}
+}
+
+.line::before {
+	position: absolute;
+	top: -16px;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	content: "";
+
+	background-color: #000;
+}
+
+/*****CHECKBOX COLOR*****/
+.form-color {
+	margin-bottom: 57px;
+	padding: 0;
+	border: none;
+
+	&__title {
+		display: block;
+		width: 100%;
+		position: relative;
+		margin-bottom: 30px;
+
+		@include Gilroy;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.18px;
+	}
+
+	&__label {
+		label {
+			position: relative;
+			display: block;
+			margin-left: 27px;
+			padding-left: 14px;
+
+			@include OpenS;
+			font-size: 14px;
+			line-height: 40px;
+			letter-spacing: 0.01em;
+
+			cursor: pointer;
+		}
+
+		label::before {
+			position: absolute;
+			top: 9px;
+			left: -27px;
+			width: 27px;
+			height: 23px;
+			content: "";
+
+			background-image: url(../img/checkbox-off.svg);
+			background-repeat: no-repeat;
+		}
+	}
+
+	#checkbox1:checked~.form-color__label .checkbox1::before,
+	#checkbox2:checked~.form-color__label .checkbox2::before,
+	#checkbox3:checked~.form-color__label .checkbox3::before,
+	#checkbox4:checked~.form-color__label .checkbox4::before,
+	#checkbox5:checked~.form-color__label .checkbox5::before {
+		background-image: url(../img/checkbox-on.svg);
+		background-repeat: no-repeat;
+	}
+}
+
+/*****RADIO BLUETOORH*****/
+.form-radio {
+	margin-bottom: 60px;
+	padding: 0;
+	border: none;
+
+	&__title {
+		width: 100%;
+		margin-bottom: 30px;
+		position: relative;
+
+		@include Gilroy;
+		font-size: 18px;
+		font-weight: 800;
+		letter-spacing: 0.01em;
+	}
+
+	&__label {
+		label {
+			position: relative;
+			display: block;
+			margin-left: 25px;
+			padding-left: 16px;
+
+			@include OpenS;
+			font-size: 14px;
+			line-height: 40px;
+			letter-spacing: 0.01em;
+
+			cursor: pointer;
+		}
+
+		label::before {
+			position: absolute;
+			top: 9px;
+			left: -25px;
+			width: 25px;
+			height: 25px;
+			content: "";
+
+			background-image: url(../img/radio_off.svg);
+			background-repeat: no-repeat;
+
+		}
+	}
+
+	#radio1:checked~.form-radio__label .radio1::before,
+	#radio2:checked~.form-radio__label .radio2::before {
+		background-image: url(../img/radio_on.svg);
+		background-repeat: no-repeat;
+	}
+}
+
+.form-btn {
+	width: 220px;
+	background-color: transparent;
+	border: none;
+	outline: 0;
+	cursor: pointer;
 }
